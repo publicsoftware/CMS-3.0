@@ -1,0 +1,9 @@
+{
+    "name": "CMS3.0",
+    "version": "0.0.1",
+    "dependencies": {
+        "angular": "~1.2.19",
+        "jquery": "~2.1.1"
+    },
+    "private": false
+}
