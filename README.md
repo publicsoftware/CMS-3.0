@@ -20,8 +20,7 @@ CMS 3.0 Content Management ในโครงการซอฟแวร์ส�
     bower http://bower.io/
 
 ## Installation
-    npm install
-    bower install
+    npm install && bower install
 
 ## Usage
     npm start
