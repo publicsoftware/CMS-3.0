@@ -9,7 +9,7 @@ CMS 3.0 Content Management ในโครงการซอฟแวร์ส�
     EJS
     express-ejs-layouts
 
-## Client Side
+## Client side
     angularjs,requirejs,angularAMD
     underscore
     tinyMCE
