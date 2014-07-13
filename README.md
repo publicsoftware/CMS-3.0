@@ -21,7 +21,10 @@ CMS 3.0 Content Management ในโครงการซอฟแวร์ส�
 
 ## Installation
     npm install && bower install
+    Default http access port is 3000. You can change /bin/www line number 5 to any port.
 
 ## Usage
     npm start
-    Start your any browser access to  http://localhost:3000
+    Start your any browser access to  http://localhost:3000 for frontend.
+    http://localhost:3000/login for backend.
+
