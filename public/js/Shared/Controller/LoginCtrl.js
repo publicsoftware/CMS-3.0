@@ -4,5 +4,9 @@ define(['../../'+appPath], function (app) {
         $scope.loginSubmit = function(){
             $location.path('/auth');
         }
+        $scope.aside = {
+            "title": "Title",
+            "content": "Hello Aside<br />This is a multiline message!"
+        };
     });
 });

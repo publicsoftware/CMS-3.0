@@ -2,9 +2,13 @@ require.config({
     baseUrl: "js",
     waitSeconds : 90,
     paths: {
-        'angular': '/components/angular/angular.min',
+        'angular': '/components/angular/angular',
         'angular-route': '/components/angular-route/angular-route.min',
         'angular-resource' : '/components/angular-resource/angular-resource.min',
+        'angular-animate' : '/components/angular-animate/angular-animate.min',
+        'angular-sanitize' : '/components/angular-sanitize/angular-sanitize.min',
+        'angular-strap' : '/components/angular-strap/dist/angular-strap.min',
+        'angular-strap-tpl' : '/components/angular-strap/dist/angular-strap.tpl.min',
         'angularAMD': '/components/angularAMD/angularAMD.min',
         'ngload': '/components/angularAMD/ngload.min',
         'bootstrap': '/components/bootstrap/dist/js/bootstrap.min',
@@ -14,8 +18,12 @@ require.config({
         'angularAMD': ['angular'],
         'angular-route' : ['angular'],
         'angular-resource' : ['angular'],
+        'angular-sanitize' : ['angular'],
+        'angular-animate' : ['angular'],
+        'angular-strap' : ['angular'],
+        'angular-strap-tpl' : ['angular','angular-strap'],
         'ngload': ['angularAMD']
     },
-    deps: ['backend/App'],
+    deps: ['Backend/App'],
     urlArgs: "bust=v0.01"
 });

@@ -14,7 +14,7 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-app.set('layout', 'partial/layout'); // Default layout partial
+app.set('layout', 'partial/frontend'); // Default layout partial
 
 
 app.use(expressLayouts);

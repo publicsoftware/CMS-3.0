@@ -16,6 +16,6 @@ require.config({
         'angular-resource' : ['angular'],
         'ngload': ['angularAMD']
     },
-    deps: ['frontend/App'],
+    deps: ['Frontend/App'],
     urlArgs: "bust=v0.01"
 });
