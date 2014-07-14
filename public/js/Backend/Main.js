@@ -4,6 +4,7 @@ require.config({
     paths: {
         'angular': '/components/angular/angular.min',
         'angular-route': '/components/angular-route/angular-route.min',
+        'angular-resource' : '/components/angular-resource/angular-resource.min',
         'angularAMD': '/components/angularAMD/angularAMD.min',
         'ngload': '/components/angularAMD/ngload.min',
         'bootstrap': '/components/bootstrap/dist/js/bootstrap.min',
@@ -12,8 +13,9 @@ require.config({
     shim: {
         'angularAMD': ['angular'],
         'angular-route' : ['angular'],
+        'angular-resource' : ['angular'],
         'ngload': ['angularAMD']
     },
-    deps: ['App'],
-    urlArgs: "bust=v0.01t"
+    deps: ['backend/App'],
+    urlArgs: "bust=v0.01"
 });
