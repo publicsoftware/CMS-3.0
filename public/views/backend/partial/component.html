@@ -1,12 +1,13 @@
 <div class="aside" tabindex="-1" role="dialog">
     <div class="aside-dialog">
         <div class="aside-content">
-            <div class="aside-header" ng-show="title">
+            <div class="aside-header">
                 <button type="button" class="close" ng-click="$hide()">&times;</button>
                 <h4 class="aside-title">Component Select</h4>
             </div>
-            <div class="aside-body" ng-show="content">
-
+            <div class="aside-body">
+                <div ng-click="$hide();ShowTextInputMode()" class="padding-img"><img src="/images/backend/glyphicons_150_edit@2x.png"> Text Input</div>
+                <div class="padding-img"><img src="/images/backend/glyphicons_138_picture@2x.png"> Image</div>
             </div>
             <div class="aside-footer">
             </div>

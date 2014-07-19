@@ -4,11 +4,19 @@ define(['angularAMD','jquery','angular-route' ,'angular-resource','angular-sanit
     var app = angular.module("CMSApp", ['ngRoute','ngSanitize','ngResource','ngAnimate','mgcrea.ngStrap']);
     app.config(['$routeProvider', '$locationProvider',function ($routeProvider,$locationProvider) {
         $routeProvider.when("/authenticate", angularAMD.route({
-            templateUrl: '/views/backend/login.html', controller: 'LoginCtrl',
-            controllerUrl: 'Shared/Controller/LoginCtrl'
+            templateUrl: '/views/backend/login.html', controller: 'BackendCtrl',
+            controllerUrl: 'Shared/Controller/BackendCtrl',
+            resolve: {
+//                ComponentLoad: function () {
+//                }
+            }
         })).when("/auth", angularAMD.route({
-            templateUrl: '/views/backend/index.html', controller: 'LoginCtrl',
-            controllerUrl: 'Shared/Controller/LoginCtrl'
+            templateUrl: '/views/backend/index.html', controller: 'BackendCtrl',
+            controllerUrl: 'Shared/Controller/BackendCtrl',
+            resolve: {
+//                ComponentLoad: function () {
+//                }
+            }
         })).otherwise({
             redirectTo : "authenticate"
         });

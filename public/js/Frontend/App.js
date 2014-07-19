@@ -4,7 +4,11 @@ define(['angularAMD', 'angular-route' ,'angular-resource'], function (angularAMD
     app.config(['$routeProvider', '$locationProvider',function ($routeProvider,$locationProvider) {
         $routeProvider.when("/", angularAMD.route({
             templateUrl: '/views/frontend/index.html', controller: 'ComponentCtrl',
-            controllerUrl: 'Shared/Controller/ComponentCtrl'
+            controllerUrl: 'Shared/Controller/ComponentCtrl',
+            resolve: {
+//                ComponentLoad: function () {
+//                }
+            }
         })).otherwise({
             redirectTo : "/"
         });
